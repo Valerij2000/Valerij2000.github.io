@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- Корректное отображение для мобильных устройств -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<!-- Ключевые слова поиска -->
+	<meta name="keywords" content="Макет, Макет-описание, HTML макет, Пример макета сайта" >
+	<!-- Сниппет страницы (краткое описание страницы) при поиске -->
+	<meta name="description" content="Эта страница рассказывает о структуре макета сайта">
+	
+
+	<title>travel-site</title>
+
+
+	<!-- jQuery 1.8 or later, 33 KB -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+	<!-- Parallax JS -->
+
+	<script src="js/parallax.min.js"></script>
+
+	<!-- Rellax-Parallax JS -->
+
+	<script src="js/rellax-parallax.min.js"></script>
+
+
+	<!-- Fotorama from CDNJS, 19 KB -->
+
+	<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+
+
+
+	
+	<!-- Подключаем Bootstrap -->
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+	
+	
+	<!-- Стили animate CSS  -->
+	
+	<link rel="stylesheet" href="css/animate.css">
+	
+	
+	<!-- Стили и скрипты  -->
+
+	<link rel="stylesheet" href="css/style.css">
+	
+	<!-- jQuery -->
+
+	<script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+	
+	<!-- CSS - Slider-Slick -->
+	
+	<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+	
+	
+	<!-- Magnific Popup core CSS file -->
+
+	<!-- <link rel="stylesheet" href="animation_popup/style.css"> -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+
+	<!-- Magnific Popup core JS file -->
+	<script src="js/jquery.magnific-popup.js"></script>
+
+	
+	<!-- SVG MODAL -->
+
+	<script src="js/snap.svg-min.js"></script>
+	<script src="js/main.js"></script>
+
+	
+	<!-- JS - Slider-Slick -->
+
+	<script type="text/javascript" src="js/slick/slick.js"></script>
+	<script type="text/javascript" src="js/slick/slick.min.js"></script>
+
+	<!-- WOW JS -->
+
+	<script src="js/wow.js"></script>
+
+	<!-- VIDE JS -->
+
+	<script src="js/jquery.vide.min.js"></script>
+
+	<!-- API Yandex Map -->
+
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+	</script>
+
+	
+	<!-- MyScript JS -->
+
+	<script src="js/script.js" defer></script>
+	
+
+</head>
+<body>
+	
+  
+  
+  <!-- wrapper - Обертка всего содержимого  -->
+    <div class="wrapper">
+  
+<!-- Back to top button -->
+<a id="button"></a>
+      <section class="header-section">
+  
+  
+      <div class="container">
+        
+        <div class="row">
+			<div class="col-xl-12">
+				<header>
+					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+						<a class="navbar-brand animate__delay-1s animate__animated  animate__fadeInTopLeft" href="#"><img src="img/01.png" alt=""></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+						  <span class="navbar-toggler-icon"></span>
+						</button>
+						<div class=" justify-content-end collapse navbar-collapse" id="navbarNavAltMarkup">
+						  <div class="navbar-nav">
+							<a class="nav-link" href="javascript:void(0)" onclick="scrollDownUp('#home');">Home <span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="javascript:void(0)" onclick="scrollDownUp('#service');">Service</a>
+							<a class="nav-link" href="javascript:void(0)" onclick="scrollDownUp('#price');">Price</a>
+							<a class="nav-link" href="javascript:void(0)" onclick="scrollDownUp('#gallery');" >gallary</a>
+						  </div>
+						</div>
+					  </nav>
+				</header>
+			</div>
+		</div>
+
+		<div class="row header-block" id="home">
+			<div class="col-xl-6 animate__delay-1s animate__animated animate__backInLeft">
+				<h1>travel is <span>beautiful</span></h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nesciunt blanditiis repellendus dolorum facilis quo voluptatem, perferendis itaque maxime nemo dicta nihil, quibusdam ipsam non amet velit? 1500s</p>
+			</div>
+			<div class="col-xl-5 offset-xl-1">
+				<div class="form-block">
+				
+						<h5>request a quote</h5>
+					<form>
+						<div class="form-group animate__delay-1s animate__animated animate__backInRight">
+							<input placeholder="Full Name" type="text" class="form-control">
+							<input placeholder="Email Adress" type="text" class="form-control">
+							<input placeholder="Phone Number" type="text" class="form-control">
+							<input placeholder="Country" type="text" class="form-control">
+						</div>
+						<div class="form-check animate__delay-1s animate__animated animate__backInRight">
+						  <input type="checkbox" class="form-check-input">
+						  <label class="form-check-label">I accept the terms & conditions</label>
+						</div>
+						<div class="form-group animate__delay-1s animate__animated animate__backInRight">
+							<button type="button" class="btn btn-primary">Send</button>
+						</div>
+						
+					
+					  </form>
+				
+				</div>
+			</div>
+		</div>
+  
+      </div>
+  
+	  </section>
+	  
+
+	  <section class="services-section" id="service">
+		  <div class="container">
+			  <div class="row">
+				  <div class="col-xl-6">
+					<h2>our <span>services</span></h2>
+				  </div>
+			  </div>
+			  <div class="row">
+				  <div class="col-xl-3">
+					  <div class="block">
+						  <img src="img/02.png" alt="">
+						  <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, deleniti!</h6>
+					  </div>
+				  </div>
+				  <div class="col-xl-3">
+					  <div class="block">
+						  <img src="img/03.png" alt="">
+						  <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, deleniti!</h6>
+					  </div>
+				  </div>
+				  <div class="col-xl-3">
+					  <div class="block">
+						  <img src="img/04.png" alt="">
+						  <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, deleniti!</h6>
+					  </div>
+				  </div>
+				  <div class="col-xl-3">
+					  <div class="block">
+						  <img src="img/05.png" alt="">
+						  <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, deleniti!</h6>
+					  </div>
+				  </div>
+			  </div>
+		  </div>
+	  </section>
+  
+  
+       <section class="story-block">
+		   <div class="container">
+			   <div class="row">
+				   <div class="col-xl-8">
+						<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam cupiditate, ullam sequi culpa, eum praesentium voluptates blanditiis, cumque qui nulla excepturi neque! Non tempora repellendus iure! Consequuntur beatae, distinctio fuga a hic fugit pariatur?</h6>
+				   </div>
+				   <div class="col-xl-3 offset-xl-1">
+					<button type="button" class="btn">Our Story</button>
+				   </div>
+			   </div>
+		   </div>
+	   </section>
+      
+            <section class="price-section" id="price">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-12">
+							<h2>pricing</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xl-4">
+							<div class="card mb-4 shadow-sm pt-3">
+								<div class="card-header">
+								  <h3 class="my-0 font-weight-strong">Starter</h3>
+								</div>
+								<div class="card-body">
+								  <h4>FREE</h4>
+								  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, ipsum!</p>
+								  <p>--</p>
+								  <p>--</p>
+								  <button type="button" class="btn btn-lg btn-block btn-primary">try</button>
+								</div>
+							  </div>
+						</div>
+						<div class="col-xl-4">
+							<div class="card mb-4 shadow-sm pt-3">
+								<div class="card-header">
+									<p class="absolute">Popular</p>
+									<img src="img/06.png" alt="popular">
+								  <h3 class="my-0 font-weight-strong">Business</h3>
+								</div>
+								<div class="card-body">
+								  <h4>$ 297</h4>
+								  <p>Lorem ipsum dolor sit amet consectetur,  adipisicing elit. Quibusdam accusamus odit consectetur delectus ea modi.</p>
+								  <p>--</p>
+								  <button type="button" class="btn btn-lg btn-block btn-primary">sign up</button>
+								</div>
+							  </div>
+						</div>
+						<div class="col-xl-4">
+							<div class="card mb-4 shadow-sm pt-3">
+								<div class="card-header">
+								  <h3 class="my-0 font-weight-strong">Professional</h3>
+								</div>
+								<div class="card-body">
+								  <h4>$ 297</h4>
+								  <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum reprehenderit ad, dolore dolorem et sed.</p>
+								  <button type="button" class="btn btn-lg btn-block btn-primary">sign up</button>
+								</div>
+							  </div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<section class="gallery-section" id="gallery">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-5">
+							<h3>testimonial</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cupiditate eligendi deleniti quas dignissimos sint nulla non ea ipsum! Quam vero repudiandae exercitationem recusandae, illo magnam non molestiae dolorem perferendis?</p>
+							<h6>DJ Bravo - Frequent Travelera</h6>
+							<img class="wow animate__fadeIn animate__delay-1s animate__animated" src="img/13.png" alt="">
+							<img class="wow animate__fadeIn animate__delay-4s animate__animated ml-5" src="img/12.png" alt="">
+						</div>
+						
+						<div class="col-xl-7">
+							<h3 class="gal">gallery</h3>
+							<img class="wow animate__fadeIn animate__delay-1s animate__animated" src="img/07.png" alt="">
+							<img class="wow animate__fadeIn animate__delay-2s animate__animated" src="img/08.png" alt="">
+							<img class="wow animate__fadeIn animate__delay-3s animate__animated" src="img/09.png" alt="">
+							<img class="wow animate__fadeIn animate__delay-1s animate__animated" src="img/10.png" alt="">
+							<img class="wow animate__fadeIn animate__delay-2s animate__animated" src="img/11.png" alt="">
+							
+						</div>
+					</div>
+				</div>
+			</section>
+          
+          <section class="footer-section">
+            <div class="container">
+                <!-- footer - Подвал страницы -->
+              <footer class="footer">
+				  <div class="row">
+					<div class="col-xl-6">
+						<div class="foot-text">All Rights Served | 2020 | Designed with love by <span>Valeij Shumkov</span></div>
+					  </div>
+					  <div class="col-xl-1 offset-xl-4">
+						  <img src="img/01.png" alt="">
+					  </div>
+					  <div class="col-xl-1"></div>
+				  </div>
+              </footer>
+            </div>
+          </section>        
+    
+    </div>
+  
+  
+  
+  
+
+	
+</body>
+</html>
