@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- Корректное отображение для мобильных устройств -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<!-- Ключевые слова поиска -->
+	<meta name="keywords" content="Макет, Макет-описание, HTML макет, Пример макета сайта" >
+	<!-- Сниппет страницы (краткое описание страницы) при поиске -->
+	<meta name="description" content="Эта страница рассказывает о структуре макета сайта">
+	
+
+	<title>Laba № 7</title>
+
+		<!-- jQuery -->
+
+<script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
+	<!-- Подключаем Bootstrap -->
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+  
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- Vue JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+	<!-- Стили и скрипты  -->
+
+	<link rel="stylesheet" href="css/style.css">
+	
+	<!-- MyScript JS -->
+
+	<script src="js/script.js" defer></script>
+	
+
+</head>
+<body>
+	
+  
+  
+  <!-- wrapper - Обертка всего содержимого  -->
+    <div id="app">
+  
+      <section class="table-section">
+        <div class="container">
+
+
+          <div class="row">
+            <div class="col-xl-12">
+              
+              <table>
+              
+                <tr>
+                  <td><b>{{dev_lang[0]}}</b></td>
+                  <td><b>{{dev_lang[1]}}</b></td>
+                  <td><b>{{dev_lang[2]}}</b></td>
+                  <td><b>{{dev_lang[3]}}</b></td>
+                  <td><b>{{dev_lang[4]}}</b></td>
+                  <td><b>{{dev_lang[5]}}</b></td>
+                </tr>
+                <tr>
+                  <td><b>{{lang[0]}}</b></td>
+                  <td class="langStyle" v-for="(item, index) in lang" :key="index">{{rowJS[index]}}</td>
+                 
+                </tr>
+               
+                <tr>
+                  <td><b>{{lang[1]}}</b></td>
+                  <td class="langStyle" v-for="(item, index) in lang" :key="index">{{rowPHP[index]}}</td>
+                </tr>
+
+                <tr>
+                  <td><b>{{lang[2]}}</b></td>
+                  <td class="langStyle" v-for="(item, index) in lang" :key="index">{{rowPython[index]}}</td>
+                </tr>
+
+                <tr>
+                  <td><b>{{lang[3]}}</b></td>
+                  <td class="langStyle" v-for="(item, index) in lang" :key="index">{{rowJava[index]}}</td>
+                </tr>
+
+                <tr>
+                  <td><b>{{lang[4]}}</b></td>
+                  <td class="langStyle" v-for="(item, index) in lang" :key="index">{{rowC[index]}}</td>
+                </tr>
+
+
+              
+
+                <tr>
+                  
+                  <td><b>Weight</b></td>
+                  <td v-for="(item, index) in lang" :key="index"><input v-model="cofArr[index]" type="number">
+                   
+                  </td> 
+                  
+                </tr>
+                
+              </table>
+
+              {{getCorrectCof()}}
+              <span style="color: red;" class="mb-3 mt-3">{{error}}</span>
+
+              {{getMinEl()}}
+              {{getMaxEl()}}
+             
+              <table>
+                <tr>
+                  <td>
+                    <b>MIN</b>
+                   <td v-for="(item, index) in min" :key="index">{{item}}</td>
+                  </td>
+              </tr>
+                <tr>
+                  <td>
+                    <b>MAX</b>
+                    <td v-for="(item, index) in max" :key="index">{{item}}</td>
+                  </td>
+                </tr>
+              </table>
+
+
+              <!-- <h6>Weight: {{wArr}}</h6>
+              <h6>Coificient: {{cofArr}}</h6> -->
+
+              
+              <a class="w-100 mt-5 waves-effect waves-light btn-large" v-on:click.once="getNewTable();">calc</a>
+            </div>
+          </div>
+
+
+       
+             
+          
+              
+
+              <div class="row">
+                <div class="col-xl-12">
+                  <template>
+                    <div v-if="click === true">
+                      <table>
+                        <tr>
+                          <td><b>{{dev_lang[0]}}</b></td>
+                          <td><b>{{dev_lang[1]}}</b></td>
+                          <td><b>{{dev_lang[2]}}</b></td>
+                          <td><b>{{dev_lang[3]}}</b></td>
+                          <td><b>{{dev_lang[4]}}</b></td>
+                          <td><b>{{dev_lang[5]}}</b></td>
+                          <td><b>{{nameSum}}</b></td>
+                        </tr>
+                        <tr>
+                          <td><b>{{lang[0]}}</b></td>
+                          <td class="langStyle" v-for="(item, index) in lang" :key="index">{{js[index]}}</td>
+                          <td>
+                            {{getSum ()}}
+                            {{sumJS}}
+                            
+                           
+                           
+                            
+                          </td>
+                         
+                        </tr>
+                       
+                        <tr>
+                          <td><b>{{lang[1]}}</b></td>
+                          <td class="langStyle" v-for="(item, index) in lang" :key="index">{{php[index]}}</td>
+                          <td>
+                            {{sumPhp}}
+                          </td>
+                        </tr>
+        
+                        <tr>
+                          <td><b>{{lang[2]}}</b></td>
+                          <td class="langStyle" v-for="(item, index) in lang" :key="index">{{pyth[index]}}</td>
+                          <td>
+                            {{sumPyth}}
+                          </td>
+                        </tr>
+        
+                        <tr>
+                          <td><b>{{lang[3]}}</b></td>
+                          <td class="langStyle" v-for="(item, index) in lang" :key="index">{{java[index]}}</td>
+                          <td>
+                            {{sumJava}}
+                          </td>
+                        </tr>
+        
+                        <tr>
+                          <td><b>{{lang[4]}}</b></td>
+                          <td class="langStyle" v-for="(item, index) in lang" :key="index">{{c[index]}}</td>
+                          <td>
+                            {{sumC}}
+                          </td>
+                        </tr> 
+                      </table>
+                      <h4 class="outData">Max Element: {{Math.max(sumC, sumJava, sumPyth, sumPhp, sumJS)}} </h4>
+                    </div>
+                  </template>
+                  
+                </div>
+              </div>
+
+              
+
+
+          
+        </div>
+      </section>
+            
+    
+    </div>
+  
+  
+  
+  
+
+	
+</body>
+</html>
