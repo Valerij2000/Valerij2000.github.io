@@ -1,6 +1,6 @@
 
 function pf () {
-	let p = prompt('Enter passwprd:');
+	let p = prompt('Enter password:');
 	console.log(p)
 	
 if (p === 'marinaValerijShumkov') {
