@@ -1,0 +1,49 @@
+.wrapper {
+
+
+    // Home page
+
+
+    .nav-link {
+        font-weight: 1000;
+        font-size: 23px;
+    }
+
+
+
+
+    // Upload Page
+    
+
+    .upload-section {
+
+        padding-top: 25vh;
+        background-color: #292929;
+        min-height: 100vh;
+
+        .upload__txt, .label__text {
+            color: white;
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+      
+
+        .form-control {
+            box-shadow: 2px 1px 8px 3px white;
+        }
+
+
+        .link__txt {
+            margin-top: 27px;
+            font-size: 23px;
+        }
+
+
+
+
+    }
+
+
+
+
+}

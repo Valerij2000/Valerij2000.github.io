@@ -1,0 +1,27 @@
+.wrapper .nav-link {
+  font-weight: 1000;
+  font-size: 23px;
+}
+
+.wrapper .upload-section {
+  padding-top: 25vh;
+  background-color: #292929;
+  min-height: 100vh;
+}
+
+.wrapper .upload-section .upload__txt, .wrapper .upload-section .label__text {
+  color: white;
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+.wrapper .upload-section .form-control {
+  -webkit-box-shadow: 2px 1px 8px 3px white;
+          box-shadow: 2px 1px 8px 3px white;
+}
+
+.wrapper .upload-section .link__txt {
+  margin-top: 27px;
+  font-size: 23px;
+}
+/*# sourceMappingURL=style.css.map */
