@@ -7,4 +7,4 @@ Basis Stack:
 -- GULP / WEBPACK
 -- VUE.JS / NUXT.JS
 
-My web-development works!
+Web Development Jobs!
