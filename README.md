@@ -4,7 +4,7 @@
 
 http://portfolio-site.rf.gd/
 
-### Basis Stack: 
+### Basis Front-end Stack: 
 
 - html {pug, slim, handlebars}, css {sass, scss, less} / js {vanilla js, jquery}
 - email letters
