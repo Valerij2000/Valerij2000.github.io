@@ -5,6 +5,7 @@
 ### Basis Stack: 
 
 - html {pug, slim, handlebars}, css {sass, scss, less} / js {vanilla js, jquery}
+- email letters
 - css frameworks - bootstrap, materialize.css
 - design - figma, photoshop, sketch
 - web assemblers - gulp, webpack, grunt
@@ -12,8 +13,13 @@
 - CMS - WordPress, Ghost
 - 3D modeling - three.js, blender.js
 - web game - phaser.js
+- GIT
 
 ### Additional skills:
 
-- php, ruby, python, visual basic, pascal
+- php, SQL, ruby, python, visual basic, pascal
 - frameworks - ruby on rails
+- database - MySQL, NoSQL
+- docker
+- Cisco
+- BPwin, ERwin Data Modeler, ARIS Express
