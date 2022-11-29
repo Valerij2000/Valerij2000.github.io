@@ -19,6 +19,7 @@ http://portfolio-site.rf.gd/
 
 ### Additional skills:
 
+- seo
 - php, SQL, ruby, python, visual basic, pascal
 - frameworks - ruby on rails
 - database - MySQL, NoSQL
