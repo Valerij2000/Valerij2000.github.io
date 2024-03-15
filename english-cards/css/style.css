@@ -1,0 +1,217 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    outline: 1px solid blue;
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#lng {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+}
+
+.bg-white {
+    background: #ffffff !important;
+}
+
+.KanjiCard {
+    position: relative;
+    width: 350px;
+    min-height: 400px;
+    text-align: center;
+    background: #e2b8b8a3;
+    border: 2px solid #e4cccc;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 4px 20px -3px gray;
+    box-shadow: 0 4px 20px -3px gray;
+    padding: 20px;
+    outline: none;
+}
+
+.KanjiCard-rotate {
+    -webkit-transform: rotateY(89.5deg);
+    transform: rotateY(89.5deg);
+}
+
+.KanjiCard_kanji {
+    font-size: 27pt;
+    padding-bottom: 20px;
+    padding-top: 60px;
+    color: #000000;
+    word-wrap: break-word;
+}
+
+.KanjiCard_kana {
+    font-size: 14pt;
+    padding: 10px;
+}
+
+.KanjiCard_translation {
+    font-size: 16pt;
+    padding: 10px;
+    color: #000000;
+}
+
+.block {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.third {
+    width: 200px;
+    height: 50px;
+    background-color: #cfb2af;
+    border: 1px solid #e4cccc;
+    color: #fff;
+    outline: none;
+}
+
+.third:focus {
+    outline: none;
+}
+
+.unit {
+    position: absolute;
+    right: 15px;
+    font-size: 15px;
+    top: 15px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.exit {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+}
+
+@media (min-width: 992px) {
+    .exit {
+        width: 70px;
+        height: 60px;
+    }
+}
+
+.wrapper-specific {
+    padding: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    outline: 1px solid blue;
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-attachment: fixed;
+    height: auto;
+}
+
+.container {
+    max-width: 660px;
+}
+
+.irregular {
+    background: #ffebee;
+    background-clip: padding-box;
+    -webkit-box-shadow: 0 12px 15px 0 rgb(0 0 0 / 25%);
+    box-shadow: 0 12px 15px 0 rgb(0 0 0 / 25%);
+}
+
+td {
+    font-family: 'Arial';
+    padding: 20px;
+    line-height: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+
+th {
+    text-decoration: underline;
+    font-family: 'Arial';
+    padding: 20px;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .wrapper-specific {
+        padding: 20px;
+    }
+
+    td {
+        padding: 10px;
+        line-height: 20px;
+        font-size: 20px;
+    }
+
+    th {
+        padding: 10px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+.start-playing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color: #cfb2af;
+    border: 1px solid #e4cccc;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    outline: none;
+    margin: 0 auto;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
